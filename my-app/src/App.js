@@ -24,7 +24,7 @@ class App extends Component{
   })
 
   componentDidMount(){
-    fetch(`https://cdn.rawgit.com/akabab/starwars-api/0.2.1/api/all.json`)
+    fetch(`https://cdn.jsdelivr.net/gh/akabab/starwars-api@0.2.1/api/all.json`)
       .then(data => data.json())
       .then(profiles => {
         this.setState({ profiles: profiles })
